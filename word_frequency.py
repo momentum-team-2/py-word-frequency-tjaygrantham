@@ -16,7 +16,7 @@ def print_word_freq(file):
     for i in range(10):
         word = sortedWords[i]
         count = wordCounts[word]
-        print(word.rjust(6), "|", count, "".join("*" for i in range(count))) # Print the 10 most common words
+        print(word.rjust(6), "|", count, "*" * count) # Print the 10 most common words
     f.close() # Close txt file
 
 
